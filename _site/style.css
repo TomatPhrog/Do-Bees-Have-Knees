@@ -1,0 +1,116 @@
+:root{
+    --hive-yellow: #f8a412;
+    --comb-yellow: #bb7804;
+    --left-padding: 6vw;
+}
+body {
+    background-image: url(images/honeycomb.webp);
+    background-repeat: repeat;
+    background-size: 20vw 20vw;
+    margin: 0%;
+    font-family: Dekko, sans-serif;
+    h1, h2, p, ul {
+        padding: 0em var(--left-padding);
+    }
+    h2 {
+        margin-top: 2em;
+    }
+    .title {
+        margin-bottom: 0em;
+    }
+    .subtitle {
+        color: var(--comb-yellow);
+        margin-top: 0em;
+    }
+    
+}
+.content {
+    margin: 0em 20em;
+    min-height: 100vh;
+    background-color: white;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    header {
+        background-color: var(--hive-yellow);
+        border-bottom: 2px solid black;
+        .mainTitle{
+            font-size: 3em;
+            margin: 0em;
+            padding: 0em var(--left-padding);
+            padding-top: 0.3em;
+        }
+    }
+    img {
+        border: 2px solid black;
+        margin: 2em 0em;
+        width: 30vw;
+    }
+    .space {
+        margin: 0em;
+        height: 1vh;
+    }
+}
+
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.5em;
+}
+p {
+    font-size: 1.2em;
+}
+a {
+    font-size: 1.2em;
+    color: var(--comb-yellow);
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+nav {
+    ul{
+        display: flex;
+        list-style: none;
+        gap: 1.4em;
+        padding: 1em 0em 0em var(--left-padding);
+        margin-top: 0%;
+        a {
+            color: black;
+            &:hover{
+                color: var(--comb-yellow);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1580px){
+    .content{
+        margin: 0em 12em;
+    }
+}
+@media screen and (max-width: 1100px){
+    .content{
+        margin: 0em 6em;
+    }
+}
+@media screen and (max-width: 500px){
+    .content{
+        margin: 0em 1em;
+        .mainTitle {
+            font-size: 2em;
+        }
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    p, a {
+        font-size: 1.2em;
+    }
+    img {
+        width: 50vw;
+    }
+}
